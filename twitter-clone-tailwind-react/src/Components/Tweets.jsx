@@ -1,8 +1,9 @@
-import React from "react";
-
-const Tweets = ({tweet}) => {
+import React, { useState } from "react";
+import './Tweets.css';
+const Tweets = ({tweet,img}) => {
   return (
-    <div className="border-2 p-3">
+    <div className="border p-3 flex gap-3 items-center">
+      <img className="rounded-full" src={img} alt="" />
       <span>{tweet}</span>
     </div>
   );
